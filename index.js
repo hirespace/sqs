@@ -103,10 +103,6 @@ module.exports = function(options) {
 		request(queryURL('CreateQueue', '/', {QueueName:name}), function(err) {
 			if (err) return onresult(err);
 			request(queryURL('GetQueueUrl', '/', {QueueName:name}), function(err, res) {
-				console.log({err});
-				console.log({err: JSON.stringify(err)});
-				console.log({res});
-				console.log({res: JSON.stringify(res)});
 				if (err || res.statusCode !== 200) {
 					var errMessage = (res && res.body) ? text(res.body, 'Message') : '';
 					return onresult(err || new Error('invalid status code from GetQueueUrl: '+res.statusCode +

@@ -1,6 +1,6 @@
 {
   "name": "@william_swannell/sqs-lite",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "dependencies": {
     "request": "~2.75.0"
   },
