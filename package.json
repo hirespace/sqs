@@ -4,8 +4,8 @@
   "dependencies": {
     "request": "~2.75.0"
   },
-  "repository": "git://github.com/mafintosh/sqs",
-  "description": "A message queue using Amazon Simple Queue Service.",
+  "repository": "git://github.com/hirespace/sqs",
+  "description": "A message queue using Amazon Simple Queue Service - forked from Mathias Buus Madsen's sqs",
   "keywords": [
     "sqs",
     "aws",
@@ -13,5 +13,5 @@
     "queue",
     "message"
   ],
-  "author": "Mathias Buus Madsen <mathiasbuus@gmail.com>"
+  "author": "William Swannell <swannell@gmail.com>"
 }
