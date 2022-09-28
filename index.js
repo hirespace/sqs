@@ -50,6 +50,9 @@ module.exports = function(options) {
 	namespace = namespace.replace(/[^a-zA-Z0-9]/g, '-').replace(/\-+/g, '-');
 
 	request = request.defaults({
+		headers: {
+			'content-type': 'text/xml'
+		},
 		aws: {
 			key: options.access,
 			secret: options.secret,
